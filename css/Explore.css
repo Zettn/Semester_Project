@@ -28,23 +28,23 @@ header {
   background-color: white;
 }
 header hr {
-  width: 30%;
+  width: 100%;
   font-size: 20px;
   border: 1px solid rgba(67, 24, 146, 1);
 }
 #logo {
-  height:70px;
+  height:60px;
 }
 nav {
   display: none; /* By default hide the menu */
 }
 
 #hamburger-menu     {
-  display: none; /* Hide checkbox */ 
+  display: none;
 }
 
 #hamburger-menu:checked ~ nav {
-  display: block; /* Display nav block when checkbox is checked only */ 
+  display: block;
 }
 label[for=hamburger-menu] { 
 font-size: 3em;
@@ -95,10 +95,6 @@ header nav ul li:last-child {
 /*End of Nav menu*/
 
 /*Start of boxes*/
-section#boxes {
-  width: 100%;
-  background-color: white;
-}
 .box {
   width: 100%;
   background-color: white;
@@ -106,76 +102,8 @@ section#boxes {
   display: inline-block;
   position: relative;
 }
-
-.info {
-  width: 100%;
-  align-items: center;
-  margin-bottom: 10px;
-  display: block;
-}
-.info h2 {
-  color:black;
-  position: relative;
-  top:2%;
-  font-family: 'Sora', sans-serif;
-  font-style: bold;
-  align-items: center;
-  font-size: 30px;
-  width: 100%;
-  text-align: center;
-}
-.info p {
-  color:black;
-  position: relative;
-  top:2%;
-  font-family: 'Sora', sans-serif;
-  font-style: bold;
-  align-items: center;
-  font-size: 18px;
-  max-width: 400px;
-  text-align: center;
-  margin-left:auto;
-  margin-right: auto;
-}
-.info hr {
-  width: 30%;
-  font-size: 20px;
-  border: 1px solid rgba(89, 0, 202, 1);
-}
-.box2 {
-  width: 100%;
-  background-color: white; 
-  text-align: center;
-  align-items: center;
-  display: inline-block;
-  position: relative;
-}
-.box2 h2 {
-  text-align: center;
-  position: relative;
-  color:white;
-}
-.box2 p{
-  text-align: center;
-  position: relative;
-  color:white;
-  font-weight: 20px;
-}
-.copy {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  text-align: center;
-  width: 80%;
-  font-family: 'Sora', sans-serif;
-  font-weight: 600;
-  font-size: large;
-}
-#img3 {
-  width: 100%;
-}
 #img1 {
-  width: 100%;
+  width: 80%;
 }
 #header_txt {
   position: absolute;
@@ -186,39 +114,29 @@ section#boxes {
   text-align: right;
   font-size: 25px;
   width: 80%;
-  color:rgb(255, 255, 255);
-}
-#header_txt2 {
-  align-items: center;
-  max-width: 80%;
-}
-#header_txt2 h2{
-  position: absolute;
-  top:5%;
-  font-family: 'Sora', sans-serif;
-  font-style: bold;
-  align-items: center;
-  font-size: 30px;
-  width: 100%;
-  text-align: center;
-}
-#header_txt2 p{
-  position: absolute;
-  top:5%;
-  font-family: 'Sora', sans-serif;
-  font-style: bold;
-  align-items: center;
-  font-size: 30px;
-  width: 100%;
-  text-align: center;
+  color:rgb(255, 238, 0);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 #footer {
   grid-area:bottom;
   width: 100%;
 }
-#img2 {
-  width: 100%;
-}
+footer {
+  background: #1A1E25;
+  color: #868c96;
+  }
+  
+  footer p {
+  padding: 40px 0;
+  text-align: center;
+  }
+  
+  footer img {
+  width: 44px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:40px;
+  }
 @media (min-width: 640px) {
   body {
     background-color:white;
@@ -250,7 +168,6 @@ section#boxes {
     'top'    'top'
     'hero'   'hero'
     'info'   'info'
-    'boxes'  'boxes'
     'bottom' 'bottom';
   }
   header { grid-area: top; background-color: rgb(255, 255, 255); }
@@ -293,11 +210,9 @@ section#boxes {
     'top    top    top    top'
     'hero   hero   hero   hero'
     'info' 'info' 'info' 'info'
-    'boxes   boxes  boxes  boxes'
     'bottom bottom bottom bottom';}
   }
   header { grid-area: top; background-color: white; }
-  section#boxes { grid-area: boxes; background-color: white; }
   section#hero { grid-area: hero; background-color: white; }
   section#info {grid-area: info; background-color: white;}
   footer { grid-area: bottom;   background-color:#3f3f3f; }
@@ -315,76 +230,31 @@ section#boxes {
   }
   
   #hamburger-menu     {
-    display: none; /* Hide checkbox */ 
+    display: none;
   }
   
   #hamburger-menu:checked ~ nav {
-    display: none; /* Display nav block when checkbox is checked only */ 
-  }
-  .info {
-    display:inline-block;
-    width: 49%;
-    height: 350px;
-    background-color: white;
-
-  }
-  .info h2 {
-    color:black;
-    position: relative;
-    top:2%;
-    font-family: 'Sora', sans-serif;
-    font-style: bold;
-    align-items: center;
-    font-size: 30px;
-    width: 100%;
-    text-align: center;
-  }
-  .info p {
-    color:black;
-    position: relative;
-    top:2%;
-    font-family: 'Sora', sans-serif;
-    font-style: bold;
-    align-items: center;
-    font-size: 18px;
-    max-width: 400px;
-    text-align: center;
-    margin-left:auto;
-    margin-right: auto;
-  }
-  .info hr {
-    width: 30%;
-    font-size: 20px;
-    border: 1px solid rgba(89, 0, 202, 1);
+    display: none;
   }
   label[for=hamburger-menu] { 
   display: none; 
   }
-  #img2 {
-    width: 75%;
-
-  }
   #img1 {
-    width: 100%;
-  }
-  #img3 {
     width: 90%;
   }
-  
-
-footer {
-background: #1A1E25;
-color: #868c96;
-}
-
-footer p {
-padding: 40px 0;
-text-align: center;
-}
-
-footer img {
-width: 44px;
-font-family:Arial, Helvetica, sans-serif;
-font-size:40px;
-}
+  footer {
+    background: #1A1E25;
+    color: #868c96;
+    }
+    
+    footer p {
+    padding: 40px 0;
+    text-align: center;
+    }
+    
+    footer img {
+    width: 44px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:40px;
+    }
 }

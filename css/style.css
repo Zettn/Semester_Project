@@ -196,6 +196,8 @@ section#boxes {
   font-size: 25px;
   width: 80%;
   color:rgb(255, 255, 255);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 #header_txt2 {
   align-items: center;
