@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
 /* Mobile first approach */
 /* this defines how the body should appear, with both size and layout on mobile size. */
 body { 
@@ -13,15 +14,14 @@ body {
   'info'
   'info'
   'boxes'
-  'footer';
+  'bottom';
 }
-
 header { grid-area: top; background-color: rgb(255, 255, 255); }
-section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
-section#info {grid-area: info; background-color: pink;}
 section#boxes { grid-area: boxes; background-color: rgb(255, 255, 255) }
+section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
+section#info {grid-area: info; background-color: white;}
 footer { grid-area: bottom;   background-color:#3f3f3f; }
-
+/*Start of Nav menu*/
 header {
   margin: 5px 0;
   position: relative;
@@ -29,14 +29,11 @@ header {
   width: 100%;
   background-color: white;
 }
-
 #logo {
   height:70px;
 }
-
 nav {
   display: none; /* By default hide the menu */
-
 }
 
 #hamburger-menu     {
@@ -46,15 +43,12 @@ nav {
 #hamburger-menu:checked ~ nav {
   display: block; /* Display nav block when checkbox is checked only */ 
 }
-
-
 label[for=hamburger-menu] { 
 font-size: 3em;
 position: absolute; /* header is relative */
 right: 0px;
 top: 10px; 
 }
-
 label[for=hamburger-menu]:hover {
   cursor:pointer;
 }
@@ -66,12 +60,9 @@ label[for=hamburger-menu]:hover {
     margin: 0;
     width: 100%;
     margin-top:10px;
-
 }
-
 header nav ul li {     
     margin-bottom: 2px; 
-
 }
 header nav ul li a { 
     text-decoration: none; 
@@ -80,19 +71,16 @@ header nav ul li a {
     padding: 15px 15px;
     display: block; 
     text-align: center;
-    font-family:"gilroy"; 
+    font-family:'Sora', sans-serif; 
 }
-
 header nav ul li a.active {
   background-color:#f6fa00;
   color:black;
 }
-
 header nav ul li a.inactive{
   color:#f6fa00;
   background-color: rgb(0, 131, 207)
 }
-
 header nav ul li a.inactive:hover {
   transition: 0.4s;
   background-color: #f6fa00;
@@ -101,22 +89,299 @@ header nav ul li a.inactive:hover {
 header nav ul li:last-child {
    margin-bottom: 0;
 }
+/*End of Nav menu*/
+
+/*Start of boxes*/
+section#boxes {
+  width: 100%;
+  background-color: white;
+}
+.box {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.info {
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#info_img {
+  margin-right: auto;
+  margin-left: auto;
+  height: 300px;
+}
+.info h2 {
+  color:black;
+  position: relative;
+  top:2%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.info p {
+  color:black;
+  position: relative;
+  top:2%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 18px;
+  max-width: 400px;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+.info hr {
+  width: 30%;
+  font-size: 20px;
+  border: 1px solid rgba(89, 0, 202, 1);
+}
+.info2 {
+  display:grid;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.info2 h2 {
+  color:black;
+  position: relative;
+  top:2%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.info2 p {
+  color:black;
+  position: relative;
+  top:2%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 18px;
+  max-width: 400px;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+.info2 hr {
+  width: 30%;
+  font-size: 20px;
+  border: 1px solid rgba(89, 0, 202, 1);
+}
+.box2 {
+  width: 100%;
+  background-color: white; 
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+}
+.box2 h2 {
+  text-align: center;
+  position: relative;
+  color:white;
+}
+.box2 p{
+  text-align: center;
+  position: relative;
+  color:white;
+  font-weight: 20px;
+}
+
+.copy {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+
+#img1 {
+  width: 100%;
+}
+#header_txt {
+  position: absolute;
+  top:7%;
+  font-family: 'Orbitron', sans-serif;
+  font-style: bold;
+  color:white;
+  text-align: right;
+  font-size: 25px;
+  width: 80%;
+  color:rgb(255, 255, 255);
+}
+#header_txt2 {
+  align-items: center;
+  max-width: 80%;
+}
+#header_txt2 h2{
+  position: absolute;
+  top:5%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#header_txt2 p{
+  position: absolute;
+  top:5%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+
+#footer {
+  grid-area:bottom;
+  display:grid;
+  width: 100%;
+}
+#img2 {
+  width: 100%;
+}
+.box4 {
+  width: 100%;
+  background-color: white; 
+  text-align: center;
+  align-items: center;
+  display: inline-block;
+  position: relative;
+}
+.box4 h2 {
+  color:white;
+  position: absolute;
+  top:2%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.box4 p {
+  color:white;
+  position: absolute;
+  top:30%;
+  font-family: 'Sora', sans-serif;
+  font-style: bold;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: Gilroy;
+}
+
+
 @media (min-width: 640px) {
 
   body {
-    background-color:aqua;
+    background-color:white;
     display: grid;
     grid-template-areas:
     'top'    'top'
     'hero'   'hero'
     'info'   'info'
     'boxes'  'boxes'
-    'footer' 'footer';
+    'bottom' 'bottom';
+  }
+  header { grid-area: top; background-color: rgb(255, 255, 255); }
+  section#boxes { grid-area: boxes; background-color: rgb(255, 255, 255) }
+  section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
+  section#info {grid-area: info; background-color: white;}
+  footer { grid-area: bottom;   background-color:#3f3f3f; }
+  #info_img {
+    margin-right: auto;
+    margin-left: auto;
+    height: 375px;
+  }
+  .info p {
+    color:black;
+    position: relative;
+    top:2%;
+    font-family: 'Sora', sans-serif;
+    font-style: bold;
+    align-items: center;
+    font-size: 18px;
+    max-width: 550px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
   }
 
+  header nav ul li a { 
+    padding: 9px 9px;
 }
 
+  
 
+@media (min-width: 800px) {
+
+  body {
+    background-color:white;
+    display: grid;
+    grid-template-areas:
+    'top'    'top'
+    'hero'   'hero'
+    'info'   'info'
+    'boxes'  'boxes'
+    'bottom' 'bottom';
+  }
+  header { grid-area: top; background-color: rgb(255, 255, 255); }
+  section#boxes { grid-area: boxes; background-color: rgb(255, 255, 255) }
+  section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
+  section#info {grid-area: info; background-color: white;}
+  footer { grid-area: bottom;   background-color:#3f3f3f; }
+  header {
+    align-items: center;
+    display: inline-block;
+  }
+  nav ul li {
+    display:inline-block;
+  }
+  nav {
+    display: block; /* By default hide the menu */
+    float: right;
+  }
+  #hamburger-menu     {
+    display: none; /* Hide checkbox */ 
+  }
+  #hamburger-menu:checked ~ nav {
+    display: none; /* Display nav block when checkbox is checked only */ 
+  }
+  #header_txt {
+    font-size: 35px;
+  }
+  label[for=hamburger-menu] { 
+  display: none; 
+  }
+  header nav ul li a { 
+    padding: 15px 15px;
+}
+}
 /* For wider screens */
 @media (min-width: 1024px) {
   body {
@@ -125,44 +390,126 @@ header nav ul li:last-child {
     grid-template-areas:
     'top    top    top    top'
     'hero   hero   hero   hero'
+    'info' 'info' 'info' 'info'
     'boxes   boxes  boxes  boxes'
-    'bottom bottom bottom bottom';
+    'bottom bottom bottom bottom';}
+  }
+  header { grid-area: top; background-color: white; }
+  section#boxes { grid-area: boxes; background-color: white; }
+  section#hero { grid-area: hero; background-color: white; }
+  section#info {grid-area: info; background-color: white;}
+  footer { grid-area: bottom;   background-color:#3f3f3f; }
+
+  header {
+    align-items: center;
+    display: inline-block;
+  }
+  nav ul li {
+    display:inline-block;
+  }
+  nav {
+    display: block; /* By default hide the menu */
+    float: right;
+  }
+  
+  #hamburger-menu     {
+    display: none; /* Hide checkbox */ 
+  }
+  
+  #hamburger-menu:checked ~ nav {
+    display: none; /* Display nav block when checkbox is checked only */ 
   }
 
-  #hero {
-    width: 700px;
-    background-color: blue;
+  .info {
+    display:inline-block;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #info_img {
+    margin-right: auto;
+    margin-left: auto;
+    width: 10%;
+  }
+  .info h2 {
+    color:black;
+    position: relative;
+    top:2%;
+    font-family: 'Sora', sans-serif;
+    font-style: bold;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .info p {
+    color:black;
+    position: relative;
+    top:2%;
+    font-family: 'Sora', sans-serif;
+    font-style: bold;
+    align-items: center;
+    font-size: 18px;
+    max-width: 400px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .info hr {
+    width: 30%;
+    font-size: 20px;
+    border: 1px solid rgba(89, 0, 202, 1);
+  }
+  .info2 {
+    display:inline-block;
+    width: 45%;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .info2 h2 {
+    color:black;
+    position: relative;
+    top:2%;
+    font-family: 'Sora', sans-serif;
+    font-style: bold;
+    align-items: center;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+  .info2 p {
+    color:black;
+    position: relative;
+    top:2%;
+    font-family: 'Sora', sans-serif;
+    font-style: bold;
+    align-items: center;
+    font-size: 18px;
+    max-width: 400px;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .info2 hr {
+    width: 30%;
+    font-size: 20px;
+    border: 1px solid rgba(89, 0, 202, 1);
+  }
+  
+  
+  label[for=hamburger-menu] { 
+  display: none; 
+  }
+  #img2 {
+    width: 60%;
   }
   #img1 {
-    height: 500px;
+    width: 100%;
   }
-  label[for=hamburger-menu] {
-    display:none;
+  #info_img {
+    width: 100%;
   }
-  header nav {
-    display: block;
-    float:right;
+  #img3 {
+    width: 100%;
   }
-  header nav ul { 
-    list-style-type: none; /**/
-    display: inline-block; /**/
-    padding-left: 0;/**/
-  }
-  header nav li { 
-      float: left; /**/
-      background-color: #000; /**/
-  }
-  header nav li a { 
-      text-decoration: none; /**/
-      width: 100px; /**/
-      display: inline-block; /**/
-      color: #fff; /**/
-      padding: 2px 3px; /**/
-      text-align: center; /**/
-  }
-  header nav li:last-child {
-      margin-right: 0; /**/
-  }
-
 }
-
