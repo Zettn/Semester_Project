@@ -88,21 +88,7 @@ header nav ul li:last-child {
    margin-bottom: 0;
 }
 /*End of Nav menu*/
-footer {
-  background: #1A1E25;
-  color: #868c96;
-  }
-  
-  footer p {
-  padding: 40px 0;
-  text-align: center;
-  }
-  
-  footer img {
-  width: 44px;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:40px;
-  }
+
 /*Start of boxes*/
 section#boxes {
   width: 100%;
@@ -330,6 +316,10 @@ section#boxes {
   #hamburger-menu:checked ~ nav {
     display: none; /* Display nav block when checkbox is checked only */ 
   }
+
+  section#hero{
+
+  }
   .info {
     display:inline-block;
     width: 49%;
@@ -379,19 +369,21 @@ section#boxes {
   #img3 {
     width: 90%;
   }
-  footer {
-  background: #1A1E25;
-  color: #868c96;
-  }
+  
 
-  footer p {
-  padding: 40px 0;
-  text-align: center;
-  }
+footer {
+background: #1A1E25;
+color: #868c96;
+}
 
-  footer img {
-  width: 44px;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:40px;
-  }
+footer p {
+padding: 40px 0;
+text-align: center;
+}
+
+footer img {
+width: 44px;
+font-family:Arial, Helvetica, sans-serif;
+font-size:40px;
+}
 }
