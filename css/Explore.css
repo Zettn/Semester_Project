@@ -27,6 +27,11 @@ header {
   width: 100%;
   background-color: white;
 }
+header hr {
+  width: 30%;
+  font-size: 20px;
+  border: 1px solid rgba(67, 24, 146, 1);
+}
 #logo {
   height:70px;
 }
@@ -315,10 +320,6 @@ section#boxes {
   
   #hamburger-menu:checked ~ nav {
     display: none; /* Display nav block when checkbox is checked only */ 
-  }
-
-  section#hero{
-
   }
   .info {
     display:inline-block;

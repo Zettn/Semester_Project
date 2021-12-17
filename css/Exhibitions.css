@@ -317,9 +317,7 @@ section#boxes {
     display: none; /* Display nav block when checkbox is checked only */ 
   }
 
-  section#hero{
 
-  }
   .info {
     display:inline-block;
     width: 49%;

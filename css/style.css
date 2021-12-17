@@ -369,16 +369,6 @@ section#boxes {
   label[for=hamburger-menu] { 
   display: none; 
   }
-  #img2 {
-    width: 75%;
-
-  }
-  #img1 {
-    width: 100%;
-  }
-  #img3 {
-    width: 90%;
-  }
   footer {
   background: #1A1E25;
   color: #868c96;
