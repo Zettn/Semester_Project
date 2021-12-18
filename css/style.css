@@ -93,15 +93,14 @@ footer {
   color: #868c96;
   }
   
-  footer p {
-  padding: 40px 0;
-  text-align: center;
+  footer h2 {
+    font-family: Orbitron;
+    align-items: center;
+    text-align: center;
   }
-  
-  footer img {
-  width: 44px;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:40px;
+  footer p {
+  text-align: center;
+  font-family: Sora;
   }
 /*Start of boxes*/
 section#boxes {
@@ -223,10 +222,6 @@ section#boxes {
   width: 100%;
   text-align: center;
 }
-#footer {
-  grid-area:bottom;
-  width: 100%;
-}
 #img2 {
   width: 100%;
 }
@@ -243,7 +238,6 @@ section#boxes {
   header { grid-area: top; background-color: rgb(255, 255, 255); }
   section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
   section#info {grid-area: info; background-color: white;}
-  footer { grid-area: bottom;   background-color:#3f3f3f; }
   #info_img {
     margin-right: auto;
     margin-left: auto;
@@ -267,7 +261,6 @@ section#boxes {
   header { grid-area: top; background-color: rgb(255, 255, 255); }
   section#hero { grid-area: hero; background-color: rgb(255, 255, 255); }
   section#info {grid-area: info; background-color: white;}
-  footer { grid-area: bottom;   background-color:#3f3f3f; }
   header {
     align-items: center;
     display: inline-block;
@@ -374,16 +367,5 @@ section#boxes {
   footer {
   background: #1A1E25;
   color: #868c96;
-  }
-
-  footer p {
-  padding: 40px 0;
-  text-align: center;
-  }
-
-  footer img {
-  width: 44px;
-  font-family:Arial, Helvetica, sans-serif;
-  font-size:40px;
   }
 }
