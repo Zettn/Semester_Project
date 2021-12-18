@@ -107,6 +107,9 @@ section#boxes {
   width: 100%;
   background-color: white;
 }
+#img2 {
+  height: 125px;
+}
 .box {
   width: 100%;
   background-color: white;
